@@ -15,8 +15,9 @@ pipeline {
         stage('Push') {
             steps {
                 script {
-                    withDockerRegistry(credentialsId: 'dockerhub') {
-                        sh 'docker push dpyaram/paytm:bank'
+                   withDockerRegistry(credentialsId: 'docker-password', url: 'https://hub.docker.com/repositories/dpyaram') {
+    // some block
+                          }
                     }
                 }
             }
