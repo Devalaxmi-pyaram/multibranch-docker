@@ -17,7 +17,7 @@ pipeline {
                 script {
                     withDockerRegistry(credentialsId: 'docker-password', url: 'https://hub.docker.com/repositories/dpyaram') {
     // some block
-         }
+         
                     }
                 }
             }
